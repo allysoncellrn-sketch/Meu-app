@@ -1,0 +1,8 @@
+body{margin:0;font-family:system-ui;background:#0f172a;color:white;}
+.topo{background:#020617;padding:15px;display:flex;justify-content:space-between;}
+.card{background:#1e293b;padding:15px;border-radius:10px;margin:10px;}
+input,button{width:100%;padding:10px;margin-top:5px;border-radius:8px;border:none;}
+button{background:#22c55e;color:white;}
+button.red{background:#ef4444;}
+button.blue{background:#3b82f6;}
+table{width:100%;margin-top:10px;}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLYSON CELL PDV PRO</title>
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topo">
+<h1>ALLYSON CELL</h1>
+<button onclick="alert('Contato: WhatsApp / Loja')">Contatos</button>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h3>Scanner de Código</h3>
+<div id="reader"></div>
+<input id="codigo" placeholder="Código do produto">
+<button onclick="ativarCamera()">Permitir Câmera</button>
+<button onclick="iniciarScanner()">Ler Código</button>
+</div>
+
+<div class="card">
+<h3>Cadastro</h3>
+<input id="nome" placeholder="Nome">
+<input id="descricao" placeholder="Descrição">
+<input id="preco" type="number" placeholder="Preço">
+<input id="qtd" type="number" placeholder="Quantidade">
+<input type="file" id="foto">
+<button onclick="salvarProduto()">Salvar Produto</button>
+</div>
+
+<div class="card">
+<h3>Estoque</h3>
+<table>
+<thead>
+<tr>
+<th>Foto</th>
+<th>Nome</th>
+<th>Código</th>
+<th>Preço</th>
+<th>Qtd</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="lista"></tbody>
+</table>
+</div>
+
+</div>
+
+<footer>
+© 2026 ALLYSON CELL
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
